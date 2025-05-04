@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend-java
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+
+  cpp-core:
+    build: ./core-cpp
+    volumes:
+      - ./core-cpp:/app
+
+  db:
+    image: postgres:14
+    environment:
+      POSTGRES_USER: estelar
+      POSTGRES_PASSWORD: estelar123
+      POSTGRES_DB: malla_estelar
+    ports:
+      - "5432:5432"
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"

@@ -1,0 +1,10 @@
+{
+  "folders": [
+    { "path": "backend-java" },
+    { "path": "core-cpp" },
+    { "path": "frontend" }
+  ],
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  }
+}
