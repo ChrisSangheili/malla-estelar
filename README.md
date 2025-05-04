@@ -49,6 +49,19 @@ Ejemplos:
 - `dev`: integración de cambios
 - `feature/*`, `fix/*`, `hotfix/*`: ramas de trabajo
 
+## 🌿 Convención de ramas Git
+
+| Tipo de Rama   | Propósito                                 | Ejemplo                        | Cuándo se modifica                                     |
+|----------------|--------------------------------------------|--------------------------------|--------------------------------------------------------|
+| `main`         | Código estable en producción               | `main`                         | Solo con versiones listas para liberar                 |
+| `dev`          | Integración de nuevas funcionalidades      | `dev`                          | Con merge de ramas `feature/`, `fix/`, `hotfix/`       |
+| `feature/*`    | Nueva funcionalidad o módulo               | `feature/modelo-cuadratico`    | Durante el desarrollo de una función                   |
+| `fix/*`        | Correcciones menores de bugs               | `fix/captura-vacia`            | Al solucionar errores pequeños                         |
+| `hotfix/*`     | Correcciones urgentes en producción        | `hotfix/error-inicializacion`  | Cuando hay errores críticos en producción (`main`)     |
+| `release/*`    | Preparación para versión estable           | `release/v1.0.0`               | Antes de liberar versión y crear tag                   |
+| `exp/*`        | Prototipos, experimentos o ideas nuevas    | `exp/nueva-interfaz-grafica`   | Para validar ideas o cambios sin compromiso            |
+
+
 ---
 
 ## 🤝 Cómo contribuir
